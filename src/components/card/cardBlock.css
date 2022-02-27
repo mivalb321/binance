@@ -1,0 +1,28 @@
+.card {
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+  margin: 20px 0 0 20px;
+  padding: 20px;
+  font: 1rem sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font: 1rem sans-serif;
+  font-weight: 600;
+}
+.price-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-price {
+  margin-bottom: 20px;
+}
+.green {
+  background-color: rgb(29, 190, 23);
+}
+.pink {
+  background-color: rgb(189, 34, 228);
+}

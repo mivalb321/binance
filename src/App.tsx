@@ -1,12 +1,15 @@
-import React, {FC} from 'react';
-import './App.css';
+import React, { FC } from 'react';
+import { Layout } from 'antd';
 
-const App:FC = () => {
+import './App.css';
+import AppRouter from './AppRouter';
+
+const App: FC = () => {
   return (
-    <div className="App">
-      Работает!
-    </div>
+    <Layout className="layout">
+      <AppRouter />
+    </Layout>
   );
-}
+};
 
 export default App;

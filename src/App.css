@@ -1,4 +1,25 @@
+@import '~antd/dist/antd.css';
+
 * {
   margin: 0;
   padding: 0;
+}
+
+/* .site-layout-content {
+  min-height: 280px;
+  padding: 24px;
+  background: #fff;
+} */
+
+.site-layout-content {
+  min-height: 100vh;
+  display: flex;
+  padding: 64px 0;
+  justify-content: center;
+}
+.ant-layout-content {
+  min-height: 100vh;
+}
+.ant-row {
+  /* height: 100%; */
 }
