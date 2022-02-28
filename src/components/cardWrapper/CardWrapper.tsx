@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { Row } from 'antd';
-import CardBlock from '../card/CardBlock';
+import { CardBlock } from '../../components';
 import { IItemRate } from '../../store/redusers/getExchangeRate/types';
 
 interface ICardWrapperProps {

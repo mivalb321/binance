@@ -1,9 +1,6 @@
 /* eslint-disable no-unused-expressions */
 import React from 'react';
-import BtcPage from '../pages/btcPage/BtcPage';
-import EthPage from '../pages/ethPage/EthPage';
-import NotFoundPage from '../pages/notFoundPage/NotFoundPage';
-import UsdPage from '../pages/usdPage/UsdPage';
+import {BtcPage, EthPage, NotFoundPage, UsdPage} from '../pages';
 
 export interface IRoute {
   path?: string;

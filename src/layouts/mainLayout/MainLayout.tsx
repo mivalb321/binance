@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { Layout } from 'antd';
 import { Outlet } from 'react-router-dom';
-import HeaderComponent from '../../components/header/Header';
+import { HeaderComponent } from '../../components';
 
 import './mainLayout.css';
 

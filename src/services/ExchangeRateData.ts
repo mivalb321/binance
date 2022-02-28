@@ -12,7 +12,6 @@ export const ExchangeRateData = {
         );
         return response.data;
       } catch (e: any) {
-        console.log(e);
         return rejectWithValue(e.message);
       }
     }

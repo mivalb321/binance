@@ -9,6 +9,7 @@ interface IErrorPageProps {
 
 const ErrorPage: FC<IErrorPageProps> = ({ value }: IErrorPageProps) => {
   const navigate = useNavigate();
+
   return (
     <Result
       status="error"

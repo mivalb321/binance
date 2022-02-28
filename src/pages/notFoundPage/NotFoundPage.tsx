@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { Button, Result, Row } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import { RouteNames } from '../../router';
 
-const NotFoundPage = () => {
+const NotFoundPage: FC = () => {
   const navigate = useNavigate();
   return (
     <Row justify="center" align="middle" className="centeringPage">
