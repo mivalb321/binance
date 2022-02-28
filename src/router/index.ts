@@ -1,10 +1,9 @@
-/* eslint-disable no-unused-expressions */
-import React from 'react';
+import React, { ReactNode, ComponentType } from 'react';
 import {BtcPage, EthPage, NotFoundPage, UsdPage} from '../pages';
 
 export interface IRoute {
   path?: string;
-  element: React.ComponentType<any>;
+  element: ComponentType<ReactNode>;
   index?: boolean;
   id: number;
 }

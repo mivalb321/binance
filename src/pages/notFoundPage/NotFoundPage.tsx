@@ -5,6 +5,7 @@ import { RouteNames } from '../../router';
 
 const NotFoundPage: FC = () => {
   const navigate = useNavigate();
+
   return (
     <Row justify="center" align="middle" className="centeringPage">
       <Result

@@ -4,27 +4,24 @@ import { CardBlock } from '../../components';
 import { IItemRate } from '../../store/redusers/getExchangeRate/types';
 
 interface ICardWrapperProps {
-  data: IItemRate[] | null;
+  data: IItemRate[];
 }
 
-const CardWrapper: FC<ICardWrapperProps> = ({ data }) => {
-  return (
-    <Row justify="center" align="middle" className="centeringPage">
-      {data &&
-        data.map((item, index) => {
-          const roundedPrice = String(Number(item.lastPrice).toFixed(3));
-          const roundedPriceChange = Number(item.priceChangePercent).toFixed(3);
-          return (
-            <CardBlock
-              title={item.symbol}
-              price={roundedPrice}
-              priceChange={roundedPriceChange}
-              key={index}
-            />
-          );
-        })}
-    </Row>
-  );
-};
+const CardWrapper: FC<ICardWrapperProps> = ({ data }: ICardWrapperProps) => (
+  <Row justify="center" align="middle" className="centeringPage">
+    {data.map(({ symbol, lastPrice, priceChangePercent }) => {
+      const roundedPrice = String(Number(lastPrice).toFixed(3));
+      const roundedPriceChange = Number(priceChangePercent).toFixed(3);
+      return (
+        <CardBlock
+          title={symbol}
+          price={roundedPrice}
+          priceChange={roundedPriceChange}
+          key={symbol}
+        />
+      );
+    })}
+  </Row>
+);
 
 export default CardWrapper;

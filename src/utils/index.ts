@@ -1,2 +1,1 @@
-export {filteredData} from './filteredData';
-export {generateKey} from './generateKey';
+export * from './filteredData';

@@ -8,8 +8,13 @@ interface ICardProps {
   priceChange: string | number;
 }
 
-const CardBlock: FC<ICardProps> = ({ title, price, priceChange }) => {
+const CardBlock: FC<ICardProps> = ({
+  title,
+  price,
+  priceChange,
+}: ICardProps) => {
   const classNameCard = `card ${priceChange >= 0 ? 'green' : 'pink'}`;
+
   return (
     <div className={classNameCard}>
       <div className="card-title">{title}</div>

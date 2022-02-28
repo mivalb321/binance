@@ -21,6 +21,7 @@ const PageInnerBlock: FC<IPageInnerBlock> = ({ suffix }) => {
   useEffect(() => {
     startFetch();
     return () => stopFetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const startFetch = () => {
